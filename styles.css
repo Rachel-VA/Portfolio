@@ -1,0 +1,338 @@
+/*Only use one CSS file for styling to avoid slow loading as it will only need to make one HTTP request*/
+
+/*❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤ BELOW IS THE STYLING FOR THE LANDING PAGE  ❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤*/
+/* General Reset to remove margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #FFF;  /* White color for readability against the particle background */
+    background-color: #222;  /* Dark background color */
+    overflow-x: hidden;  /* Hide any unexpected horizontal overflow */
+    overflow-y: scroll;  /* Allow vertical scrolling */
+    height: 100vh;  /* Make sure the body covers the entire viewport */
+}
+
+/*Styling for the button that pause moving particle in the index.html */
+#toggleParticles {
+    font-size: 13px; /* Set the font size */
+    background-color: #ae3a4b; /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 0.5em 1em;  /* relative units for better scaling */
+    border: none; /* Remove border */
+    border-radius: 2px; /* Round corners */
+    cursor: pointer; /* Add a hand cursor on hover */
+    align-items: center;
+    top: 50%; /* Center vertically */
+   
+    left:8px; /* Center horizontally */
+   
+    z-index: 5; /* Set a high z-index so the button is above other elements */
+  }
+  
+
+  #toggleParticles:hover {
+    background-color: #2980b9; /* Change background on hover */
+  }
+ 
+  
+  
+/* Particle Container */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Ensures particles are behind content */
+}
+
+/* Content Styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;  
+    text-align: center;  /* Centers inline content */
+    z-index: 2;  /* Ensures content is above particles */
+    overflow-y: scroll; /*ensure the content is scrollable including mobile view*/
+    
+    
+}
+/*allow overflow content */
+.introduction {
+    overflow: auto;
+    
+}
+
+/*styling for the 'About Me' section*/
+.about-me {
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px; /*gap between the image and the text*/
+        
+}
+/*level 2 header 'About Me'*/
+.about-me h2{
+    margin-bottom:0px;
+}
+/* styling for the intro paragraph*/
+.about-me p{
+    font-size: 13px;
+    
+}
+/*styling for the pic*/
+.profile-pic {
+    width: 90px;
+    height: 130px;
+    
+}
+/*control the block paragraph to make it display neatly as a block*/
+.introduction {
+    max-width: 70%;
+    text-align: justify;
+}
+
+/*Styling for the conatact info level 2 header */
+.contact-info h2, nav h2 {
+    font-size: 1.2rem;  /* Larger font for section headers */
+    margin-bottom: 15px;
+    font-weight: bolder; 
+    color: #de27b0; /* Spacing */
+}
+/*styling for the paragraph contact info for email and phone numb*/
+.contact-info p {
+    margin-bottom: 10px;  /* Spacing between contact details */
+    color: #de27b0;
+}
+
+/* general styling for the navigation */
+nav ul, .project-section {
+    list-style-type: none;  /* Removes bullet points */
+    display: flex;  /* Arranges the list items horizontally */
+    justify-content: center;  /* Centers the items */
+}
+.nav-item a{
+    font-size:25px;
+    font-weight: bold;
+    
+    color:#09d113;
+}
+nav li, .project-section li {
+    margin: 12px 15;  /* Vertical spacing between items */
+}
+
+.nav-item, .project-section a{
+    margin: 5 5px; /*horizontal spacing between items*/
+}
+
+nav a, .project-section {
+    text-decoration: none;  /* Removes underlines */
+    color: #FFF;  /* White color */
+    padding: 10px 20px;  /* Padding for clickable area */
+    border-radius: 5px;  /* Rounded corners */
+    transition: background-color 0.3s;  /* Transition for hover effect */
+}
+
+nav a:hover, .project-section a:hover {
+    background-color: rgb(246, 242, 245);  /* Slight white background on hover */
+}
+
+/*add hover effects for the link buttons to sub-pages*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*add colors changing for the name title rachael Savage*/
+@keyframes colorChange {
+    0% {
+        color: #FFF;  /* White */
+    }
+    20% {
+        color: #dc1414;  /* Light Red */
+    }
+    40% {
+        color: #FFD54F;  /* Yellow */
+    }
+    60% {
+        color: #800080;  /* Purple */
+    }
+    80% {
+        color: #09d113;  /* Light Green */
+    }
+    100% {
+        color: #0c85e8;  /* Light Blue */
+    }
+}
+/*Styling for the title name RS header level 1*/
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 20px; /* Add some space below the name */
+    margin-top: 0px;
+    flex-grow:0;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+    /* Fade in Animation */
+    animation: fadeIn 2s ease-out forwards,
+               colorChange 10s infinite;  /* Color changing animation lasts 10 seconds and repeats indefinitely */
+}
+/*ensure different screen sizes are handled such small laptop/ipad*/
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;  
+        margin-top: 20px; 
+    }
+}
+/*targeting for handling mobile screen*/
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem; /* Even smaller font size for very small screens */
+        margin-top: 20px; 
+    }
+}
+  
+
+
+
+/*🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸 STYLING FOR THE ASSIGNMENT PROJECT PAGE  🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸*/
+
+.project-flexbox {
+    display: flex;
+    flex-wrap: wrap;/* This allows items to wrap to the next line if they don't fit. */
+    gap: 16px; /* spacing between projects */
+    margin-left: 25px;
+    
+}
+
+/* Hide all lightbox modals by default */
+.lightbox {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+/*Control all images when pop up */
+.lightbox img {
+    max-width: 80vw;/*Increase to make the image wider when it pops up*/
+    max-height: 50vh; /* Increase to make the image taller when it pops up */
+    margin-bottom: 15px;
+    margin-right: 50px;
+}
+
+.image-holder {
+    flex: 1 0 calc(33.333% - 16px); /* This attempts to fit 3 items per row. Adjust as needed. */
+}
+.lightbox:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+/*control all images inside grid container display*/
+.thumbnail {
+    width: 300px; /* set fix size width for all images */
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.prev {
+    left: 5%;
+}
+
+.next {
+    right: 5%;
+}
+
+
+.project-details {
+    text-align: center;
+    margin-top: 20px; /* space above the details */
+}
+
+.project-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.project-details p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.project-details a {
+    color: blue;
+    text-decoration: underline;
+    margin: 10px;
+    display: block;  /* Making the link a block-level element so it's on its own line */
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+/*Styling for the page title*/
+/* define the gradient color */
+.page-title {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #FFD700,Blue,white,purple, #FF6347,green,red, #66CCFF,green); /* Gradient from gold to tomato */
+    -webkit-background-clip: text; /* For Safari and older webkit-based browsers */
+    -moz-background-clip: text; /* For Firefox */
+    background-clip: text; /* Standard property */
+    color: transparent; /* Hide the actual text */
+}
+
+/* Style for the welcome heading */
+.welcome {
+    text-align: center; /* Center align the text */
+    font-size: 1.6rem; /* Adjust the font size */
+    margin-top: 20px; /* Add some top margin */
+}
+
+/* Style for the assignment description */
+.assignment-description {
+    text-align: center; /* Center align the text */
+    font-size: 14px; /* Adjust the font size */
+    margin-top: 10px; /* Add some top margin */
+    margin-bottom: 20px;
+}
+

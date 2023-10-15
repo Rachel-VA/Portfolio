@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+      <!-- Link to the CSS file -->
+      <link rel="stylesheet" href="displayimage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div style="background-color: black; padding: 20px;">
+        <h1 style="color: rgb(238, 218, 31); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 300%; text-align: center;">Welcome to My Project Spectrum</h1>
+    </div>
+    
+    
+    <!-- Create a div container for the Three.js renderer -->
+    <div id="threeContainer" style="width: 100%; height: 400px; position: relative;">
+        <!-- Button can be here if you like -->
+        <button id="toggleAnimation" style="font-size: 15px; background-color: #e00a9c; color: white; padding: 5px 10px; border: none; border-radius: 2px; cursor: pointer; position: absolute; top: 0%; left: 50%;transform: translate(-50%, 50%)">Pause/Resume Animation</button>
+    </div>
+   <!--<button id="toggleAnimation" style="font-size: 15px; background-color: #e00a9c; color: white; padding: 5px 10px; border: none; border-radius: 2px; cursor: pointer; position: absolute; bottom: 82%; left: 50%; transform: translate(-50%, 50%);">Pause/Resume Animation</button>--> 
+ 
+   <h4 style="text-align: center;">(NOTE: More projects are coming)</h4>
+
+    <br> <!--skip line-->
+    <!--********************************** GRID LAYOUT FOR PROJECT CARDS **********************************************------------------>
+    <div class="projects-container">
+<!--11111111111111 project 1 container contains all details, image, title, description, and link 111111111111111111111111111111111111-->
+        <div class="project-card">
+            <img src="IMG/sentiment.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color: red;">Python: Sentiment Analysis (2023)</h2>
+            <p>
+                Sentiment Analysis is a web app that allows users to upload text data in either CSV or TXT file formats, analyze the sentiment of the text content, provide visualization of the sentiment distribution, and offer an export function
+            </p>   
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>Flask:</strong> Utilized to create the web application and handle file uploads.</li>
+                <li><strong>pandas:</strong> Handles data loading and preprocessing, vital for sentiment analysis.</li>
+                <li><strong>matplotlib:</strong> Generates bar chart visualizations to illustrate sentiment distribution.</li>
+                <li><strong>TextBlob:</strong> Performs sentiment analysis on the text content.</li>
+                <li><strong>re:</strong> Used for text preprocessing and pattern matching in the uploaded data.</li>
+                <br>
+                
+              </ul>
+              <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/Fz9rkQTNVyk">Watch on YouTube</a></li>
+              <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/sentiment_Analyzer_Flask">Link to GitHub</a></li>
+        </div> 
+
+<!--22222222222222222222project 2 container contains all details, image, title, description, and link22222222222222222222222222222222222222-->
+        <div class="project-card">
+            <img src="IMG/webserver.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color: Blue;">Python:Server for Hosting Static Websites (2023)</h2>
+            <p>
+                This a multi-threaded web server application hosts 3 static websites
+            </p>
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>socket:</strong> Manages network sockets for network communication.</li>
+                <li><strong>threading:</strong> Manages threads for handling concurrent connections.</li>
+                <li><strong>os:</strong> Used for working with files and directories.</li>
+                <li><strong>HTTP:</strong> Protocols for handling web requests.</li>
+                <li><strong>HTML:</strong> Markup language for creating web pages.</li>
+                <li><strong>Python:</strong> Programming language used for server scripting.</li>
+            </ul>
+
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/scLjxJdsFek">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/multi-threads_host_webs/blob/main/main.py">Link to GitHub</a></li>
+                        
+        </div> 
+
+
+<!--33333333333333333333333 project 3 container contains all details, image, title, description, and link 3333333333333333-->
+        <div class="project-card">
+            <img src="IMG/rapidorganizer.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color:rgba(8, 135, 12, 0.995);">Rust: Rapid File Organizer (2023)</h2>
+            <p>
+                Rapid File Organizer is your solution for maintaining a clean and organized file system.
+                It provides various features for file organization, sorting, and renaming.
+                <ul>
+                    <li><strong>Auto File Organizer:</strong> Monitors and automatically organizes files from the desktop and download folders.</li>
+                    <li><strong>Manual Organize:</strong> Allows you to specify a folder for manual organization.</li>
+                    <li><strong>File Renamer:</strong> Mass rename files based on regular expression patterns.</li>
+                    <li><strong>Splash Screen:</strong> Displays a colorful splash screen with animated icons.</li>
+                </ul>
+            </p>
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>ansi_term:</strong> Used for adding colors to terminal output.</li>
+                <li><strong>std::io:</strong> Used for input/output operations.</li>
+                <li><strong>std::fs:</strong> Used for working with the file system.</li>
+                <li><strong>std::path:</strong> Used for handling filesystem paths.</li>
+                <li><strong>log:</strong> Provides logging functionality.</li>
+                <li><strong>regex:</strong> Used for pattern matching and manipulation of filenames.</li>
+                <li><strong>notify:</strong> Monitors file system changes for auto-organization.</li>
+                <li><strong>thread:</strong> Used for creating threads for concurrent operations.</li>
+                <li><strong>time:</strong> Provides time-related functionality.</li>
+                <li><strong>rand:</strong> Used for generating random numbers.</li>
+            </ul>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/oBEKrW9w3C0">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Rapid-File-Organizer">Link to GitHub</a></li>
+        </div> 
+
+
+<!--444444444444444 project 4 container contains all details, image, title, description, and link 44444444444444444444444-->
+        <div class="project-card">
+            <img src="IMG/fireworks.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color:#e00a9c;">JavaScript: Firework Fusion (2023)</h2>
+            <p>
+                This is an interactive fireworks animation that provides a visually stunning display of fireworks with sound. You can start and stop at your command.
+            </p>
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>HTML5 Canvas:</strong> Used for rendering the fireworks animation.</li>
+                <li><strong>JavaScript:</strong> Used for defining the fireworks logic and interactivity.</li>
+                <li><strong>Audio:</strong> Included to provide an audio backdrop to the fireworks display.</li>
+                <li><strong>CSS:</strong> Stylesheets to enhance the visual presentation of the fireworks.</li>
+            </ul>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/80o2LOIIIT4">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Fireworks">Link to GitHub</a></li>
+        </div> 
+
+<!--555555555555555555 project 5 container contains all details, image, title, description, and link 5555555555555555555-->
+        <div class="project-card">
+            <img src="IMG/snowfalling.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color: rgb(236, 190, 9);">JavaScript: Snow Falling (2023)</h2>
+            <p>
+                This is a snow falling animation generate a soothing snow falling effect on the screen.</p>
+            </p>
+            <h2>Technical Use</h2>
+            <ul>
+                <li><strong>HTML5 Canvas:</strong> Used to render the snowfalling animation.</li>
+                <li><strong>JavaScript:</strong> Provides the logic for creating and animating snowfalling.</li>
+                <li><strong>CSS:</strong> Styles the canvas and other elements for presentation.</li>
+            </ul>
+
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/wLqgzRV0RHU">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Snow-Falling">Link to GitHub</a></li>
+        </div> 
+
+
+<!--6666666666666666  project  6 container contains all details, image, title, description, and link 666666666666666666666-->
+        <div class="project-card">
+            <img src="IMG/transformteller.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color: Blue;">Python: Transforming Teller (2023)</h2>
+            <p>
+                Transforming Teller is a app that generates captivating stories across five distinct genres: Fantasy, Horror, Mystery, Romance, and Sci-Fi. 
+                Users can choose a theme, and the app generates unique stories using Markov chains.
+                The stories are narrated with soothing voices and accompanied by themed images and background music.
+            </p>
+            
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>Python:</strong> Developed using Python programming language.</li>
+                <li><strong>Pygame:</strong> Used for handling sounds and music playback.</li>
+                <li><strong>Markovify:</strong> Utilized to generate text-based stories.</li>
+                <li><strong>Tkinter:</strong> Used for building the graphical user interface (GUI).</li>
+                <li><strong>ElevenLabs API:</strong> Integrated for text-to-speech conversion.</li>
+            </ul>
+            <p>NOTE: If you prefer to skip the explaination for the code, please skip it/fastfoward</p>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/KWnNSCqELq4">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Transformer_Teller_App/tree/main">Link to GitHub</a></li>
+    
+        </div> 
+
+
+<!--7777777777777777 project 7 container contains all details, image, title, description, and link 77777777777777777777777-->
+        <div class="project-card">
+            <img src="IMG/particleSplash.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color:rgb(11, 201, 248);">JavaScript: Particle Splash (2021)</h2>
+            <p>
+                This web app features a captivating animation effect that delivers a dynamic visual experience.
+                It showcases colorful particles gracefully falling and bouncing across the canvas, creating an engaging and interactive spectacle
+            </p>
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>HTML5 Canvas:</strong> Utilized to create the interactive rain particle animation.</li>
+                <li><strong>JavaScript:</strong> Used for controlling the animation, particle behavior, and interactivity.</li>
+                <li><strong>CSS:</strong> Styled the webpage and elements for a visually appealing experience.</li>
+                <li><strong>Responsive Design:</strong> The animation adapts to different screen sizes for a seamless user experience.</li>
+            </ul>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/3sITnxN15O0">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Particle-Splash">Link to GitHub</a></li>
+        </div> 
+
+
+<!--8888888888888888 project 8 container contains all details, image, title, description, and link 88888888888888888888888-->
+        <div class="project-card">
+            <img src="IMG/voiceReminder.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color:#e00a9c;">Python: Voice Reminder (2023)</h2>
+            <p>
+                This versatile destop app helps you manage tasks efficiently by setting and receiving reminders for important events and activities.
+                Enjoy a user-friendly interface, voice notifications, and real-time reminder checks.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Set reminders with specific dates and times.</li>
+                <li>Intuitive and user-friendly interface.</li>
+                <li>Voice notification for reminders.</li>
+                <li>Option to delete reminders once they are no longer needed.</li>
+                <li>Real-time reminder checking and notification.</li>
+            </ul>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/-F5Wrz5m5F4">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Voice_Reminder">Link to GitHub</a></li>
+        </div> 
+
+
+<!--999999999999999999  project 9 container contains all details, image, title, description, and link 9999999999999999999999999-->
+        <div class="project-card">
+            <img src="IMG/foodapp.jpg" alt="Project Image" style="width: 100%;">
+            <h2 style="color: red;">React Native Expo: Delicious Food Around the World (2022)</h2>
+            <p>
+                This mobile app allows food enthusiasts worldwide to explore and share delicious dishes from diverse cultures.
+                
+            </p>
+            <h3>Technical Details:</h3>
+            <ul>
+                <li><strong>React Native Expo:</strong> The app is built using the React Native framework, allowing for cross-platform development for both iOS and Android.</li>
+                <li><strong>React Navigation:</strong> Navigation between screens is managed using React Navigation, providing a smooth user experience.</li>
+                <li><strong>Expo:</strong> Expo libraries are utilized for features like video and audio playback, as well as easy access to device functionalities.</li>
+                <li><strong>Map Integration:</strong> The app integrates React Native Maps to provide interactive map views with markers and callouts.</li>
+                <li><strong>User Authentication:</strong> User authentication is implemented using custom login and sign-up components.</li>
+                <li><strong>State Management:</strong> React's useState is used to manage state within the app.</li>
+            </ul>
+
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/_BPj8s0V0Vk">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Delicious-Food-Around-the-World">Link to GitHub</a></li>
+
+        </div> 
+
+
+<!--10101010101010101010  project  10 container contains all details, image, title, description, and link 1010101010 1010101010 1010101010 -->
+        <div class="project-card">
+            <img src="IMG/contactorganizer.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color: Blue;">C++: Contactt Organizer (2023)</h2>
+            <p>
+                The Contact Organizer App is a user-friendly desktop application that simplifies contact management.
+                Users can effortlessly add, view, and organize their contact details, including names, phone numbers, emails, and addresses.
+                The app automatically sorts contacts alphabetically, offers file-saving functionality, and allows for easy loading of saved contact information, ensuring accessibility and organization.
+            </p>
+            <h3>Usage Instructions:</h3>
+            <ul>
+                <li><strong>Smart Pointers:</strong> Smart pointers, such as `std::shared_ptr`, are used for memory management, ensuring proper resource deallocation and preventing memory leaks.</li>
+                <li><strong>Linked List:</strong> A linked list data structure is implemented to efficiently manage and organize contacts, maintaining alphabetical order.</li>
+                <li><strong>File I/O:</strong> File input/output operations are employed to save and load contact data to and from files, providing persistence to the application.</li>
+                <li><strong>Object-Oriented Programming (OOP):</strong> The code is organized using OOP principles, with structs representing Contact and Node objects and a class for managing the Address Book.</li>
+                <li><strong>Error Handling:</strong> Exception handling is implemented to gracefully handle errors during file operations and other critical sections of the code.</li>
+        
+            </ul>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/LKkN06--Mzg">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Address_Book_app">Link to GitHub</a></li>
+        </div> 
+
+
+<!--1111111111111111 project 11 container contains all details, image, title, description, and link 1111111111111111111111111111111 -->
+        <div class="project-card">
+            <img src="IMG/AI_Odyssey_Lab.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color:rgb(11, 165, 248);">HTML & CSS: AI Odyssey Lab (2023)</h2>
+            <p>
+                This is a website that displays images and stories generated using AI tools
+            </p>
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>HTML:</strong> The foundation of our web content.</li>
+                <li><strong>CSS:</strong> Styling elements to enhance user experience.</li>
+                <li><strong>JavaScript:</strong> Adding interactivity features for background sounds and buttons.</li>
+            </ul>
+            <a href="https://rachel-va.github.io/RS_AI-Odyssey-Lab/index.html">Visit Website: AI Odyssey Lab</a>
+
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/RS_AI-Odyssey-Lab">Code on GitHub</a></li>
+
+        </div> 
+
+
+<!--1212121212212121212 project 12 container contains all details, image, title, description, and link212121212212121212212121212 -->
+
+        <div class="project-card">
+            <img src="IMG/courseRegistrationSystem.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color: red;">C++: Course Registration System (2023) </h2>
+            <p>
+                This is a user-friendly desktop program designed to assist students in selecting and managing their university courses.
+                The software categorizes courses into Technology, General Study, and Elective, allowing users to view detailed course information, including the course name, cost, professor, and credits.
+                Furthermore, the application provides a summary of selected courses and their total cost.
+            </p>
+            
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>Object-Oriented Programming (OOP):</strong> Course classification and management is achieved using OOP principles with separate child classes for different course types.</li>
+                <li><strong>Dynamic Memory Allocation:</strong> Dynamic allocation with pointers and the "new" operator is used to create and manage a collection of Course objects.</li>
+                <li><strong>STL Vector:</strong> The Standard Template Library's vector is employed to dynamically handle collections of Course objects.</li>
+                <li><strong>Input/Output Streams:</strong> The application utilizes I/O streams for interactive user input and formatted output display.</li>
+                <li><strong>Error Handling:</strong> Error checks and validations are implemented to ensure the user provides valid input for course selections.</li>
+            </ul>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/DFJUDq8--Og">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/CourseRegistrationSystem">Link to GitHub</a></li>
+        </div> 
+                
+
+                
+<!--13131313 3131313project 9 container contains all details, image, title, description, and link 313131331313133131313-->
+        <div class="project-card">
+            <img src="IMG/marsmission.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color:#e00a9c;">Java: Mars Mission (2022)</h2>
+            <p>
+                The Mars Mission App is a destop interactive application simulate a various aspects of a Mars mission.   
+            </p>
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>Classes:</strong> Defined Pod, Laboratory, Storage, and Cafeteria.</li>
+                
+                <li><strong>Inheritance:</strong> Child classes inherit from the parent Pod class.</li>
+                
+                <li><strong>Encapsulation:</strong> Used private properties with public getters and setters.</li>
+            
+                <li><strong>ArrayList:</strong> Utilized for dynamic data storage or manipulation.</li>
+            
+                <li><strong>ANSI Colors:</strong> Employed for enhanced terminal output.</li>
+            </ul>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/Th0XCKcKIWs">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Mars-Mission">Link to GitHub</a></li>
+        </div> 
+
+
+        <!--141414141414141414141414  project  14 container contains all details, image, title, description, and link 141414141414 141414141414  -->
+        <div class="project-card">
+            <img src="IMG/crimeAnalysis.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color: Blue;">Python: Crime Analysis (2022)</h2>
+            <p>
+                This desktop application is designed to aids agents in identifying suspects from a database images by analyzing attributes like age, gender, and race.
+                Additionally, it offers crime rate visualizations for multiple cities, leveraging advanced facial recognition for accurate results.
+            </p>
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>Python:</strong> Version 3.10.10 (64-bit)</li>
+                <li><strong>DeepFace:</strong> Facial recognition & analysis</li>
+                <li><strong>OpenCV:</strong> Image processing</li>
+                <li><strong>Pandas:</strong> Data management</li>
+                <li><strong>OS:</strong> File path handling</li>
+                <li><strong>NumPy:</strong> Numerical operations</li>
+                <li><strong>Matplotlib:</strong> Bar chart plotting</li>
+                <li><strong>Colorama:</strong> Terminal colors</li>
+                <li><strong>Collections:</strong> Lists, Tuples, Sets, Dictionaries</li>
+            </ul>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/KMJMZ2t1fSc">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Crime_Analysis">Link to GitHub</a></li>
+            
+        </div> 
+
+
+        <!--16161616161661616161616 project 16 container contains all details, image, title, description, and link 6161616161661616161616 -->
+        <div class="project-card">
+            <img src="IMG/filerenamer.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color:#e00a9c;">Rust: File Renamer (2023)</h2>
+            <p>
+                The File Renamer app allows users to effortlessly rename multiple files in a directory based on specific patterns or criteria.
+                By providing a folder path, a pattern to match, and a new name or pattern, users can mass-rename files and images, ensuring they return with a numerical order.
+            </p>
+           <h3>Technical Use</h3>
+           <ul>
+            <li><strong>ansi_term::Color</strong>: Utilized for color-coding the output text.</li>
+            <li><strong>regex::Regex</strong>: Imports the Regex struct for pattern matching and filename manipulation.</li>
+            <li><strong>std::fs</strong>: Standard library functions to interact with the filesystem for reading, writing, and renaming files.</li>
+            <li><strong>std::io</strong>: Provides a way to accept and read input from the user.</li>
+            <li><strong>std::path::PathBuf</strong>: Struct for working with filesystem paths, allowing for building and manipulating directory paths.</li>
+        </ul>
+        <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/-f4gYdpQ6Rg">Watch on YouTube</a></li>
+        <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/File-Renamer/tree/main">Link to GitHub</a></li>
+
+        </div> 
+
+
+
+<!--171717171717171717 project 17 container contains all details, image, title, description, and link 1717171717171717171717 -->
+        <div class="project-card">
+            <img src="IMG/AndinhMuseum.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color:rgb(161, 11, 248);">C#: An Dinh Virtual Museum (2022)</h2>
+            <p>
+                This is a window form app that offers a virtual tour of a museum, allowing users to navigate through areas like the Main Hall, Upstairs, Living Room, and more with dynamic descriptions and images.
+                Through button interactions, visitors can explore different parts of the palace, view area details, and even access a secondary form for extended information.
+            </p>
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>Classes:</strong> ClassArea for room details.</li>
+                <li><strong>Objects:</strong> Main Hall, Upstairs, Living Room, Dining Room, and Front Yard.</li>
+                <li><strong>Events:</strong> Button clicks to navigate and display area details.</li>
+                <li><strong>Graphics:</strong> Changes background images based on navigation.</li>
+                <li><strong>Forms:</strong> Uses multiple forms, including a linked secondary form.</li>
+            </ul>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/AXPmX9jcYUI">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Virtual-Museum">Link to GitHub</a></li>
+            
+        </div> 
+
+
+<!--18181818181818 project 18 container contains all details, image, title, description, and link 18181818181818  -->
+        <div class="project-card">
+            <img src="IMG/AndinhMuseum.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color:#e00a9c;">C#: Web Browser (2022)</h2>
+            <p>
+                This application serves as a custom web browser, facilitating navigation to popular websites through button interactions and offering a rich user interface.
+                With built-in features such as forward, backward, and refresh functionalities, users can smoothly browse the web, manage their browsing history, and favorites, view the current date and time, and even play sounds.
+            </p>
+            <h3>Technical Use</h3>
+            <ul>
+                <li><strong>Classes:</strong> MyMainForm for managing the browser functionality.</li>
+                <li><strong>Controls:</strong> WebBrowser control for rendering and navigating web pages.</li>
+                <li><strong>Events:</strong> Button clicks for navigation, print, refresh, and other browser-related functionalities.</li>
+                <li><strong>Media:</strong> Integration of the System.Media library to play, stop sound, and voice speak text.</li>
+                <li><strong>URL Navigation:</strong> Direct URL input, and predefined buttons for popular websites like Google, Bing, and more.</li>
+                <li><strong>Forms:</strong> Main form for browsing and additional forms like Text_Reader and FormCalendar for extra functionalities.</li>
+            </ul>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/OZkjWuAZkkE">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Web-Browser-C-">Link to GitHub</a></li>
+
+        </div> 
+
+
+
+<!--19191919191919191919 project 19 container contains all details, image, title, description, and link 19191919191919191919 -->
+        <div class="project-card">
+            <img src="IMG/vbweb.png" alt="Project Image" style="width: 100%;">
+            <h2 style="color:rgb(86, 11, 248);">JavaScript: Virginia Beach (2021)</h2>
+            <p>
+                This is a website dedicated to the attractions of Virginia Beach.
+                It offers details about the city, its beaches, attractions, and provides navigation links to related websites.
+                The site is adorned with a responsive navigation bar, uses a grid layout for images, and makes use of CSS for both layout and styling.
+                (It was my first programming course)
+            </p>
+            <h3>Technical Highlights</h3>
+            <ul>
+                <li><strong>HTML:</strong>Web structure.</li>
+                <li><strong>CSS:</strong>styling the pages.</li>
+                <li><strong>Navbar:</strong> Responsive with dropdown. Font-awesome integration.</li>
+                <li><strong>Layout:</strong> Three-column grid for images.</li>
+                <li><strong>Hyperlinks:</strong> Multiple external and internal links.</li>
+                <li><strong>JavaScript:</strong> Form validation for full name and email.</li>
+                <ul>
+                    <li>Functions for validation and verifications.</li>
+                    <li>Event listeners for 'textInput'.</li>
+                    <li>Conditional formatting based on input length.</li>
+                    <li>Alert and redirection after successful validation.</li>
+                </ul>
+            </ul>
+            <li style="list-style-type: none;"><strong>Watch on YouTube:</strong> <a href="https://youtu.be/eFg3LnX4UCA">Watch on YouTube</a></li>
+            <li style="list-style-type: none;"><strong>Code on GitHub:</strong> <a href="https://github.com/Rachel-VA/Virginia-Beach-Attraction">Link to GitHub</a></li>
+        </div> 
+
+
+
+    </div><!--end of projects-container div-->
+   
+
+<!-- Link to the 3s.js file -->
+<script src="3d.js"></script>
+
+</body>
+</html>
